@@ -1,0 +1,13 @@
+<div>
+    <form (ngSubmit)="onSubmit()">
+        <label for="task">Enter a task</label><br>
+        <input type="=text" name="task" placeholder="Enter Task" [(ngModel)]="task"><br>
+        <label for="date">Enter Date</label><br>
+        <input type="date" name="date"  [(ngModel)]="date">
+        <input type="submit" id="submit1" value="Save Task"><br>
+        {{task}}<!-- Interpolation-->
+        <br>
+        {{date}}
+    </form>
+</div>
+<!-- Two way binding is data from ts to html and html to ts-->
